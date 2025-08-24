@@ -1,0 +1,63 @@
+{
+  "name": "Teach Me",
+  "short_name": "Teach Me",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/icon.ico",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.ico",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#133856",
+  "background_color": "#ffffff",
+  "description": "تطبيق تعليمي",
+  "lang": "ar",
+  "dir": "rtl"
+}

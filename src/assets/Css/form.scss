@@ -1,0 +1,35 @@
+input {
+    box-shadow: none;
+    height: 45px;
+
+    &:focus {
+        border-color: var(--accent-300);
+        box-shadow: none;
+    }
+}
+
+textarea {
+    &:focus {
+        border-color: var(--accent-300) !important;
+        box-shadow: none;
+    }
+}
+
+button{
+    background-color: var(--accent-300);
+    color: var(--bg-100);
+    padding: 8px 0;
+    &:hover {
+        box-shadow: 0 0 3px var(--accent-300); 
+    }
+}
+
+.form-check-input {
+    background-color: #eee;
+    border-color: #eee;
+}
+
+.form-check-input:checked {
+    background-color: #c99035;
+    border-color: #c99035;
+}

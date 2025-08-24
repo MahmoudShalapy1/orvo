@@ -1,0 +1,20 @@
+.Vue-Toastification__container {
+    width: auto !important;
+}
+
+html[lang = "ar"] .Vue-Toastification__container {
+    right: 0 !important;
+    width: auto !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .Vue-Toastification__container {
+        width: 100vw !important; 
+    }
+}
+
+.Vue-Toastification__toast--success {
+    background-color: var(--text-300) !important;
+    color: #fff !important;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1) !important;
+}

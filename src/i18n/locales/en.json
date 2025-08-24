@@ -1,0 +1,17 @@
+{
+  "Language": "Language",
+  "Arabic": "Arabic",
+  "English": "English",
+  "title": {
+    "strong": "Teach Me",
+    "slogan": "where AI",
+    "tagline": "meets education"
+  },
+  "description": "Teach Me is a platform that allows you to learn and teach others. You can learn from the best teachers in the world and also teach others what you know.",
+  "actions": {
+    "login": "Login",
+    "register": "Register"
+  },
+  "Home page": "Home page",
+  "Login page": "Login"
+}
