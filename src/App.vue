@@ -1,23 +1,27 @@
 <template>
-  <div :dir="currentLanguageDir">
-    <Header />
+  <div dir="rtl" lang="ar">
+    <HeaderOne />
+    <HeaderMain />
+    <HeaderThree />
     <RouterView />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue';
+
+import HeaderMain from "./components/HeaderMain.vue";
+import HeaderOne from "./components/HeaderOne.vue";
+import HeaderThree from "./components/HeaderThree.vue";
 
 export default {
-  components : {
-    Header,
+  components: {
+    HeaderMain,
+    HeaderOne,
+    HeaderThree,
   },
   computed: {
-    currentLanguageDir() {
-      return this.$i18n.locale === 'ar' ? 'rtl' : 'ltr';
-    }
-  },
-}
+  }
+};
 </script>
 
 <style scoped></style>
