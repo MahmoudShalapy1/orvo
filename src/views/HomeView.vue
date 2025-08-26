@@ -30,13 +30,11 @@
       </div>
     </div>
   </div>
+<TypeOfWatch/>
+<CardProducts/>
 </template>
 
-<script>
-export default {
-  name: 'home'
-}
-</script>
+<script></script>
 
 <style scoped>
 /* Custom styles minimized; relying more on Bootstrap classes */
