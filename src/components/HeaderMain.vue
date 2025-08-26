@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar p-0 navbar-expand-lg header-nav bg-header shadow-sm">
+  <nav class="navbar p-0 navbar-expand-lg header-nav py-1 px-0 bg-header shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
       <div
         class="main-nav col-lg-5 d-flex justify-content-start align-items-center"
@@ -8,7 +8,7 @@
           <li class="nav-item">
             <router-link
               to="/"
-              class="nav-link px-2"
+              class="nav-link position-relative px-2"
               title="الصفحة الرئيسية"
               aria-label="الصفحة الرئيسية"
               >الصفحة الرئيسية</router-link
@@ -17,7 +17,7 @@
           <li class="nav-item">
             <router-link
               to=""
-              class="nav-link px-2"
+              class="nav-link position-relative px-2"
               title="الماركات"
               aria-label="تصفح الماركات"
               >الماركات</router-link
@@ -26,7 +26,7 @@
           <li class="nav-item">
             <router-link
               to="/"
-              class="nav-link px-2"
+              class="nav-link position-relative px-2"
               title="رجالي"
               aria-label="منتجات رجالية"
               >رجالي</router-link
@@ -44,7 +44,7 @@
           <li class="nav-item">
             <router-link
               to=""
-              class="nav-link px-2"
+              class="nav-link  position-relative px-2"
               title="من نحن"
               aria-label="تعرف على شركتنا"
               >من نحن؟</router-link
@@ -80,30 +80,30 @@
             aria-label="إغلاق القائمة"
           ></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body p-0">
           <ul class="navbar-nav pe-3">
             <li class="nav-item">
-              <router-link to="/" class="nav-link" title="الصفحة الرئيسية"
+              <router-link to="/" class="nav-link position-relative" title="الصفحة الرئيسية"
                 >الصفحة الرئيسية</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="" class="nav-link" title="الماركات"
+              <router-link to="" class="nav-link position-relative" title="الماركات"
                 >الماركات</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/" class="nav-link" title="رجالي"
+              <router-link to="/" class="nav-link position-relative" title="رجالي"
                 >رجالي</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/" class="nav-link" title="حريمي"
+              <router-link to="/" class="nav-link position-relative" title="حريمي"
                 >حريمي</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="" class="nav-link" title="من نحن"
+              <router-link to="" class="nav-link position-relative" title="من نحن"
                 >من نحن؟</router-link
               >
             </li>
@@ -215,14 +215,7 @@ export default {
 };
 </script>
 
---- ### **Optimized CSS** ```scss:disable-run
 <style lang="scss" scoped>
-/* Main Header Container */
-.header-nav {
-  padding: 1rem 0;
-  direction: rtl;
-}
-
 .bg-header {
   background-color: var(--bg-beige-100, #f8f5ee);
 }
@@ -230,7 +223,6 @@ export default {
 .nav-link {
   font-weight: 700;
   color: var(--text-200, #4a4a4a);
-  position: relative;
   transition: color 0.3s ease;
 
   &:hover {
@@ -263,14 +255,17 @@ export default {
   }
 }
 
+
 .search-box {
   overflow: hidden;
-  height: 40px;
+  height: 45px;
   width: 250px;
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  border: 1px solid var(--border-color, #e0e0e0);
 
   &:focus-within {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-100, #a27f47);
   }
 
   input {
@@ -299,7 +294,6 @@ export default {
     }
   }
 }
-
 .offcanvas {
   background-color: var(--bg-beige-100, #f8f5ee);
   .offcanvas-header {
@@ -310,9 +304,7 @@ export default {
       left: 1rem;
     }
   }
-  .offcanvas-body {
-    padding: 0;
-  }
+
   .nav-item {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
