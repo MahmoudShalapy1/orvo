@@ -1,6 +1,5 @@
 <template>
   <div dir="rtl" lang="ar">
-    <HeaderOne />
     <HeaderMain />
     <RouterView />
   </div>
