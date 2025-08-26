@@ -6,10 +6,7 @@
       <div
         class="row p-2 d-flex justify-content-center align-items-center h-100 w-100"
       >
-        <div class="field col-8 col-md-6 h-100 d-flex justify-content-center align-items-center w-75">
-          <button class="h-100 px-3"><i class="bi bi-search"></i></button>
-          <input type="search" class="w-100 h-100 px-2" placeholder="ابحث ..." />
-        </div>
+        
       </div>
     </div>
   </div>

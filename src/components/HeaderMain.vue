@@ -1,87 +1,67 @@
 <template>
-  <nav class="navbar p-0 navbar-expand-lg login-nav bg-header">
+  <nav class="navbar p-0 navbar-expand-lg header-nav bg-header shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
-
-      <div class="logo col-2">
-        <a class="navbar-brand w-75" href="/" title="Home" aria-label="Home">
-          <img
-            src="/src/assets/images/icon.png"
-            class="img-fluid"
-            alt="ORVO Logo"
-            title="ORVO"
-            width="100"
-            height="100"
-          />
-        </a>
-      </div>
-
-      <div class="d-none d-lg-flex col-lg-8 justify-content-center align-items-center">
-        <ul class="navbar-nav w-100 d-flex justify-content-center align-items-center gap-2">
-          <li>
+      <div
+        class="main-nav col-lg-5 d-flex justify-content-start align-items-center"
+      >
+        <ul class="navbar-nav d-none d-lg-flex align-items-center">
+          <li class="nav-item">
             <router-link
               to="/"
-              class="nav-link text-main fw-bold fs-6 px-2"
-              title="Home"
-              aria-label="Home"
-              >Home</router-link
+              class="nav-link px-2"
+              title="الصفحة الرئيسية"
+              aria-label="الصفحة الرئيسية"
+              >الصفحة الرئيسية</router-link
             >
           </li>
-          <li>
-            <router-link
-              to="/"
-              class="nav-link text-main fw-bold fs-6 px-2"
-              title="Categories"
-              aria-label="Categories"
-              >Categories</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              to="/"
-              class="nav-link text-main fw-bold fs-6 px-2"
-              title="Brands"
-              aria-label="Brands"
-              >Brands</router-link
-            >
-          </li>
-          <li>
+          <li class="nav-item">
             <router-link
               to=""
-              class="nav-link text-main fw-bold fs-6 px-2"
-              title="Best Sellers"
-              aria-label="Best Sellers"
-              >Best Sellers</router-link
+              class="nav-link px-2"
+              title="الماركات"
+              aria-label="تصفح الماركات"
+              >الماركات</router-link
             >
           </li>
-          <li>
+          <li class="nav-item">
+            <router-link
+              to="/"
+              class="nav-link px-2"
+              title="رجالي"
+              aria-label="منتجات رجالية"
+              >رجالي</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              to="/"
+              class="nav-link px-2"
+              title="حريمي"
+              aria-label="منتجات نسائية"
+              >حريمي</router-link
+            >
+          </li>
+          <li class="nav-item">
             <router-link
               to=""
-              class="nav-link text-main fw-bold fs-6 px-2"
-              title="About Us"
-              aria-label="About Us"
-              >About Us</router-link
+              class="nav-link px-2"
+              title="من نحن"
+              aria-label="تعرف على شركتنا"
+              >من نحن؟</router-link
             >
           </li>
         </ul>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="قائمة التنقل"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-
-      <div class="icons col-3 d-flex gap-2 justify-content-center align-items-center">
-        <router-link><i class="bi fs-5 bi-search"></i></router-link>
-        <router-link><i class="bi fs-5 bi-cart4"></i></router-link>
-        <router-link><i class="bi fs-5 bi-heart"></i></router-link>
-        <router-link><i class="bi fs-5 bi-person-fill"></i></router-link>
-      </div>
-
-      <button
-        class="navbar-toggler d-lg-none"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <div
         class="offcanvas offcanvas-start d-lg-none"
@@ -89,63 +69,126 @@
         id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel"
       >
-        <div class="offcanvas-header d-flex justify-content-between align-items-center p-2 bg-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <div
+          class="offcanvas-header bg-header w-100 position-relative align-items-center border-bottom"
+        >
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">القائمة</h5>
           <button
             type="button"
-            class="btn-close text-reset"
+            class="btn-close position-absolute"
             data-bs-dismiss="offcanvas"
-            aria-label="Close"
+            aria-label="إغلاق القائمة"
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li>
-              <router-link
-                to="/"
-                class="text-main fw-bold fs-6 px-2"
-                title="Home"
-                aria-label="Home"
-                >Home</router-link
+          <ul class="navbar-nav pe-3">
+            <li class="nav-item">
+              <router-link to="/" class="nav-link" title="الصفحة الرئيسية"
+                >الصفحة الرئيسية</router-link
               >
             </li>
-            <li>
-              <router-link
-                to=""
-                class="text-main fw-bold fs-6 px-2"
-                title="Categories"
-                aria-label="Categories"
-                >Categories</router-link
+            <li class="nav-item">
+              <router-link to="" class="nav-link" title="الماركات"
+                >الماركات</router-link
               >
             </li>
-            <li>
-              <router-link
-                to=""
-                class="text-main fw-bold fs-6 px-2"
-                title="Brands"
-                aria-label="Brands"
-                >Brands</router-link
+            <li class="nav-item">
+              <router-link to="/" class="nav-link" title="رجالي"
+                >رجالي</router-link
               >
             </li>
-            <li>
-              <router-link
-                to=""
-                class="text-main fw-bold fs-6 px-2"
-                title="Best Sellers"
-                aria-label="Best Sellers"
-                >Best Sellers</router-link
+            <li class="nav-item">
+              <router-link to="/" class="nav-link" title="حريمي"
+                >حريمي</router-link
               >
             </li>
-            <li>
-              <router-link
-                to=""
-                class="text-main fw-bold fs-6 px-2"
-                title="About Us"
-                aria-label="About Us"
-                >About Us</router-link
+            <li class="nav-item">
+              <router-link to="" class="nav-link" title="من نحن"
+                >من نحن؟</router-link
               >
+            </li>
+
+            <li
+              class="nav-item p-2 d-flex justify-content-center align-items-center border-0"
+            >
+              <div class="search-box rounded-3 d-flex align-items-center shadow-sm bg-light position-relative w-100 p-2">
+                <input
+                  type="search"
+                  class="w-100"
+                  placeholder="ابحث..."
+                  aria-label="حقل البحث"
+                />
+                <button
+                  type="button"
+                  class="search-btn position-absolute"
+                  aria-label="زر البحث"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <div
+        class="logo-container col-2 d-flex justify-content-center align-items-center"
+      >
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center w-100"
+          href="/"
+          title="الرئيسية"
+          aria-label="الصفحة الرئيسية"
+        >
+          <img
+            src="/src/assets/images/icon.png"
+            alt="ORVO Logo - عودة إلى الصفحة الرئيسية"
+            width="100"
+            height="100"
+            loading="lazy"
+          />
+        </a>
+      </div>
+
+      <div
+        class="right-actions col-lg-5 d-flex justify-content-end align-items-center gap-3"
+      >
+        <div class="search-box rounded-3 d-flex align-items-center shadow-sm bg-light position-relative d-none d-md-flex p-2">
+          <input
+            type="search"
+            placeholder="ابحث..."
+            aria-label="حقل البحث"
+          />
+          <button
+            type="button"
+            class="search-btn position-absolute"
+            aria-label="زر البحث"
+          >
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <div class="action-icons d-flex gap-2">
+          <router-link
+            to="/cart"
+            class="icon-link"
+            title="سلة التسوق"
+            aria-label="سلة التسوق"
+            ><i class="bi fs-5 bi-cart4"></i
+          ></router-link>
+          <router-link
+            to="/wishlist"
+            class="icon-link"
+            title="قائمة الأمنيات"
+            aria-label="قائمة الأمنيات"
+            ><i class="bi fs-5 bi-heart"></i
+          ></router-link>
+          <router-link
+            to="/profile"
+            class="icon-link"
+            title="حسابي"
+            aria-label="صفحة الحساب"
+            ><i class="bi fs-5 bi-person-fill"></i
+          ></router-link>
         </div>
       </div>
     </div>
@@ -158,7 +201,7 @@ export default {
   data() {
     return {
       isNavbarOpen: false,
-      isDropdownOpen: false,
+      isDropdownOpen: false
     };
   },
   methods: {
@@ -167,41 +210,121 @@ export default {
     },
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
-    },
-  },
+    }
+  }
 };
 </script>
 
+--- ### **Optimized CSS** ```scss:disable-run
 <style lang="scss" scoped>
-/* Common Styles */
+/* Main Header Container */
+.header-nav {
+  padding: 1rem 0;
+  direction: rtl;
+}
+
 .bg-header {
-  background-color: var(--bg-beige-100);
+  background-color: var(--bg-beige-100, #f8f5ee);
 }
 
-.navbar-nav .nav-link,
-.icons a {
-  color: var(--text-200);
+.nav-link {
   font-weight: 700;
-  transition: color 0.3s;
+  color: var(--text-200, #4a4a4a);
+  position: relative;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--primary-100, #a27f47);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-100, #a27f47);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
-.navbar-nav .nav-link:hover,
-.icons a:hover {
-  color: var(--primary-100);
+.icon-link {
+  color: var(--text-200, #4a4a4a);
+  transition: color 0.3s ease, transform 0.3s ease;
+  &:hover {
+    color: var(--primary-100, #a27f47);
+    transform: scale(1.1);
+  }
 }
 
+.search-box {
+  overflow: hidden;
+  height: 40px;
+  width: 250px;
+  transition: all 0.3s ease;
 
+  &:focus-within {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
 
-/* Offcanvas Header Styles (You may need to define --bg-main in your global styles) */
-.offcanvas-header.bg-main {
-  background-color: var(--primary-100, #a27f47);
-  color: white;
+  input {
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 14px;
+    background: transparent;
+    flex-grow: 1;
+    color: #333;
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  .search-btn {
+    background-color: transparent;
+    left: 1rem;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    color: var(--text-200, #4a4a4a);
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--primary-100, #a27f47);
+    }
+  }
 }
-.offcanvas-header.bg-main .offcanvas-title {
-  color: white;
-}
-.offcanvas-header.bg-main .btn-close {
-  filter: invert(1);
-  left: 2rem;
+
+.offcanvas {
+  background-color: var(--bg-beige-100, #f8f5ee);
+  .offcanvas-header {
+    background-color: var(--primary-100, #a27f47);
+    color: white;
+    .btn-close {
+      filter: invert(1);
+      left: 1rem;
+    }
+  }
+  .offcanvas-body {
+    padding: 0;
+  }
+  .nav-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .nav-link {
+    font-weight: 700;
+    color: var(--text-200, #4a4a4a);
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    &:hover {
+      background-color: var(--primary-100, #a27f47);
+      color: white;
+    }
+  }
 }
 </style>
