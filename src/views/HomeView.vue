@@ -11,9 +11,21 @@
         </div>
       </div>
   </div>
+<TypeOfWatch/>
+<CardProducts/>
 </template>
 
-<script></script>
+<script>
+import TypeOfWatch from '../components/home/TypeOfWatch.vue';
+import CardProducts from '../components/home/CardProducts.vue';
+
+export default {
+  components:{
+    TypeOfWatch,
+    CardProducts,
+  }
+}
+</script>
 
 <style scoped>
 .text-main {
