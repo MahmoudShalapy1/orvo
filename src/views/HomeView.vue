@@ -4,7 +4,7 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="@/assets/images/panner01.jpeg" class="d-block w-100 home-bg-img" alt="ساعة كلاسيكية أنيقة" />
+          <img src="@/assets/images/panner01.jpg" class="d-block w-100 home-bg-img" alt="ساعة كلاسيكية أنيقة" />
         </div>
         <div class="carousel-item">
           <img src="@/assets/images/panner02.jpeg" class="d-block w-100 home-bg-img" alt="ساعة عصرية على معصم" />
@@ -34,7 +34,17 @@
 <CardProducts/>
 </template>
 
-<script></script>
+<script>
+import TypeOfWatch from '@/components/home/TypeOfWatch.vue';
+import CardProducts from '@/components/home/CardProducts.vue';
+
+export default {
+  components: {
+    TypeOfWatch,
+    CardProducts,
+  }
+}
+</script>
 
 <style scoped>
 /* Custom styles minimized; relying more on Bootstrap classes */
