@@ -35,7 +35,7 @@
           <li class="nav-item">
             <router-link
               to="/"
-              class="nav-link px-2"
+              class="nav-link position-relative px-2"
               title="حريمي"
               aria-label="منتجات نسائية"
               >حريمي</router-link
@@ -283,7 +283,7 @@ export default {
 
   .search-btn {
     background-color: transparent;
-    left: 1rem;
+    left: 0.25rem;
     border: none;
     padding: 0 1rem;
     cursor: pointer;
